@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "lib": ["dom", "es6"],
+    "baseUrl": "./src",
+    "paths": {
+      "@controllers/*": ["src/controllers/*"],
+      "@routes/*": ["src/routes/*"],
+      "@business/*": ["src/business/*"],
+      "@dal/*": ["src/dal/*"],
+      "@entities/*": ["src/entities/*"],
+      "@core/*": ["src/core/*"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.spec.ts"
+  ],
+  "files": [
+    "src/index.ts"
+  ]
+}
